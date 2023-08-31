@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- nav bar -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg px-5">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#form-container">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- hero section -->
+    <div class="bg-primary text-white p-5 text-center">
+      <h1 class="fw-normal display-3">Welcome to my portfolio</h1>
+      <p class="fs-3 fw-lighter">I showcase my skills and projects here</p>
+    </div>
+    <!--about me section -->
+    <secton class="container pt-5">
+      <h1 class="text-center">About Me</h1>
+      <div class="row pt-3">
+        <img
+          class="col-md-6 col-sm-12"
+          src="https://media.gettyimages.com/photos/computer-coder-picture-id870995976"
+          alt="img1"
+        />
+        <p class="col-md-6 col-sm-12">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+          officia voluptatem minus nam sequi nisi vel possimus, fuga illum earum
+          quos. Natus, Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Deserunt quae eos, accusamus explicabo culpa corrupti debitis
+          aspernatur ipsa pariatur laborum?
+        </p>
+      </div>
+    </secton>
+
+    <!-- portfolio section -->
+    <section id="portfolio" class="bg-light pb-5">
+      <div class="container">
+        <h2 class="text-center py-4">Portfolio</h2>
+        <div class="row">
+          <div class="col-md-4 mt-4 col-sm-12 ">
+            <div class="card">
+              <img
+                src="https://www.yeahhub.com/wp-content/uploads/2021/04/coder.jpg"
+                alt="card-image1" class="card-image-top"
+              />
+              <div class="card-body">
+                <h4>Project 1</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Provident, suscipit.
+                </p>
+                <button class="btn btn-primary">Learn more</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4  mt-4 col-sm-12 ">
+            <div class="card">
+              <img
+                src="https://www.yeahhub.com/wp-content/uploads/2021/04/coder.jpg"
+                alt="card-image1" class="card-image-top"
+              />
+              <div class="card-body">
+                <h4>Project 1</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Provident, suscipit.
+                </p>
+                <button class="btn btn-primary">Learn more</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4  mt-4 col-sm-12  ">
+            <div class="card">
+              <img
+                src="https://www.yeahhub.com/wp-content/uploads/2021/04/coder.jpg"
+                alt="card-image1" class="card-image-top"
+              />
+              <div class="card-body">
+                <h4>Project 1</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Provident, suscipit.
+                </p>
+                <button class="btn btn-primary">Learn more</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- form-section -->
+    <section class="container" id="form-container py-5">
+        <h1 class="text-center mt-3">Contact</h1>
+        <div class="row">
+        <div class="col-md-6 col-sm-12 mx-auto d-flex flex-column align-items-center">
+            <label for="name" class="form-label d-block w-100 text-start mt-3" >Name</label>
+            <input type="text" id="name" class="form-control" placeholder="Nitin Baranwal"/>
+
+            <label for="email" class="form-label d-block w-100 text-start mt-3" >Email</label>
+            <input type="email" id="email" class="form-control" placeholder="nit.nb1001@gmail.com"/>
+
+            <label for="message" class="form-label d-block w-100 text-start mt-3" >Message  </label>
+           <textarea id="message" class="form-control mb-5" placeholder="enter details" rows="5"></textarea>
+            <button class="btn btn-primary my-4 btn-lg w-100">Submit</button>
+         </div>
+     </div>
+    </section>
+    <!-- footer -->
+    <footer class="bg-dark py-3 text-center text-white fw-darker">
+      2023 My Portfolio . All rights reserved.
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
